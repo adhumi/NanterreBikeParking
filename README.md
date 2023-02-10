@@ -1,3 +1,3 @@
-# equipment-bike-parking-finder
+# NanterreBikeParking
 
 A description of this package.
