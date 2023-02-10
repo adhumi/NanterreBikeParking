@@ -8,17 +8,17 @@ struct NanterreBikeParking: AsyncParsableCommand {
 
     mutating func run() async throws {
         let equipmentService = try EquipmentService(path: csvPath)
-        
-        var decoder = JSONDecoder()
+                
+        let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         
         for equipment in equipmentService.equipments {
-            guard let request = RequestBuilder(equipment: equipment, radius: 200).request else { continue }
-            print(request)
+            guard let request = RequestBuilder(equipment: equipment, radius: 100).request else { continue }
             
             let (data, _) = try await URLSession.shared.data(for: request)
             let overpassResponse = try decoder.decode(OverpassResponse.self, from: data)
-            print(equipment.name, overpassResponse.elements.count)
+
+            print("| \(equipment.name) | \(overpassResponse.elements.isEmpty ? "❌" : "✅") | \(overpassResponse.elements.bikeParkingsCapacity) places |")
             
             try await Task.sleep(nanoseconds: 1_000_000_000)
         }

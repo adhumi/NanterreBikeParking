@@ -43,6 +43,18 @@ class EquipmentService {
     }
 }
 
+extension Array where Element == OSMElement {
+    var bikeParkingsCapacity: Int {
+        return self.reduce(0) { partialResult, element in
+            if let capacity = element.tags.capacity, let capacityAsInt = Int(capacity) {
+                return partialResult + capacityAsInt
+            } else {
+                return partialResult
+            }
+        }
+    }
+}
+
 struct Equipment: Codable {
     let identifier: Int // iD_EQ
     let type: Kind // TYPE
@@ -94,15 +106,16 @@ struct OSMElement: Codable {
     let id: Int
     let lat: Double
     let lon: Double
+    let tags: Metadata
     
     struct Metadata: Codable {
-        let access: String
-        let amenity: String
-        let bicycle_parking: String
-        let capacity: Int
-        let covered: String
-        let fee: String
-        let `operator`: String
-        let operatorType: String
+        let access: String?
+        let amenity: String?
+        let bicycle_parking: String?
+        let capacity: String?
+        let covered: String?
+        let fee: String?
+        let `operator`: String?
+        let operatorType: String?
     }
 }
