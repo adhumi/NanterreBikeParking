@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <title>Stationnement vélo à Nanterre</title>
+        <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
+        <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            
+            #map {
+                width: 100%;
+                height: 70%;
+                margin-bottom: 4em;
+            }
+
+            .marker {
+                width: 12px;
+                height: 12px;
+                background-size: contain;
+                background-color: teal;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+            
+            footer {
+                text-align: center;
+                margin-top: 4em;
+                margin-bottom: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Stationnement vélo à Nanterre</a>
+          </div>
+        </nav>
+
+        <div id='map'></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Nombre d'emplacements vélos par équipement</h2>
+                    
+                    <p>Cette page utilise <a href="https://www.nanterre.fr/1522-les-equipements.htm">les données rendues disponibles par la Ville de Nanterre</a> pour la liste des équipements et <a href="https://www.openstreetmap.org">OpenStreetMap</a> pour la position des emplacements de stationnement vélo. Elle affiche pour chaque équipement le nombre d'emplacements de stationnement vélo disponibles à moins de 100 mètres.</p>
+                    
+                    <table class="table table-hover">
+                      <tbody>                        <tr class="table-danger">
+                          <th scope="row">Caisse d'Allocations Familiales</th>
+                          <td>Chemin de l'Ile</td>
+                          <td>Aucun emplacement</td>
+                        </tr>                        <tr class="">
+                          <th scope="row">Centre Local d'Information et de Coordination gérontologique - C.L.I.C.</th>
+                          <td>Centre</td>
+                          <td>24 emplacements</td>
+                        </tr>                        <tr class="">
+                          <th scope="row">Centre d'information - Maison Daniel Féry</th>
+                          <td>Université</td>
+                          <td>14 emplacements</td>
+                        </tr>                        <tr class="">
+                          <th scope="row">EDAS - Antenne du Parc</th>
+                          <td>La Boule - Champs Pierreux</td>
+                          <td>4 emplacements</td>
+                        </tr>                        <tr class="">
+                          <th scope="row">EDAS - Le Quartz</th>
+                          <td>Chemin de l'Ile</td>
+                          <td>4 emplacements</td>
+                        </tr>                        <tr class="table-danger">
+                          <th scope="row">MDPH (Maison Départementale des Personnes Handicapées)</th>
+                          <td>Centre</td>
+                          <td>Aucun emplacement</td>
+                        </tr>                        <tr class="">
+                          <th scope="row">Maison de l'Etudiant</th>
+                          <td>Université</td>
+                          <td>90 emplacements</td>
+                        </tr>                        <tr class="">
+                          <th scope="row">Maison des femmes</th>
+                          <td>Parc Nord</td>
+                          <td>74 emplacements</td>
+                        </tr>                        <tr class="">
+                          <th scope="row">Maison des habitants</th>
+                          <td>Parc Sud</td>
+                          <td>68 emplacements</td>
+                        </tr>                        <tr class="">
+                          <th scope="row">Sécurité Sociale du Petit Nanterre</th>
+                          <td>Petit Nanterre</td>
+                          <td>6 emplacements</td>
+                        </tr>                        <tr class="table-danger">
+                          <th scope="row">URSSAF Paris RP</th>
+                          <td>Parc Nord</td>
+                          <td>Aucun emplacement</td>
+                        </tr>                      </tbody>
+                    </table>
+
+                    <footer class="small">
+                        Par Adrien Humilière pour <a href="https://www.larustinedenanterre.fr">La Rustine de Nanterre</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var map = new maplibregl.Map({
+              container: 'map',
+              style: 'https://api.maptiler.com/maps/dataviz/style.json?key=3qdhWBgaPJmzSaQA2gH1',
+              center: [2.206357, 48.896574],
+              zoom: 13,
+              scrollZoom: false
+            });
+            map.addControl(new maplibregl.NavigationControl(), 'top-right');
+            
+            var marker22 = document.createElement('div');
+            marker22.className = 'marker';
+            marker22.style.backgroundColor = "red"
+            
+            new maplibregl.Marker(marker22, {})
+                .setLngLat([2.1861969903918332, 48.89641200525321])
+                .setPopup(new maplibregl.Popup({ offset: 10, closeButton: false }).setHTML("<h6>Caisse d'Allocations Familiales</h6><p>Aucun emplacement à proximité</p>"))
+                .addTo(map);            
+            var marker243 = document.createElement('div');
+            marker243.className = 'marker';
+            marker243.style.backgroundColor = "green"
+            
+            new maplibregl.Marker(marker243, {})
+                .setLngLat([2.206979388221908, 48.89215135774311])
+                .setPopup(new maplibregl.Popup({ offset: 10, closeButton: false }).setHTML("<h6>Centre Local d'Information et de Coordination gérontologique - C.L.I.C.</h6><p>24 emplacements à proximité</p>"))
+                .addTo(map);            
+            var marker644 = document.createElement('div');
+            marker644.className = 'marker';
+            marker644.style.backgroundColor = "green"
+            
+            new maplibregl.Marker(marker644, {})
+                .setLngLat([2.2123105149398175, 48.8982541191769])
+                .setPopup(new maplibregl.Popup({ offset: 10, closeButton: false }).setHTML("<h6>Centre d'information - Maison Daniel Féry</h6><p>14 emplacements à proximité</p>"))
+                .addTo(map);            
+            var marker2 = document.createElement('div');
+            marker2.className = 'marker';
+            marker2.style.backgroundColor = "green"
+            
+            new maplibregl.Marker(marker2, {})
+                .setLngLat([2.2125917325031947, 48.8887762948542])
+                .setPopup(new maplibregl.Popup({ offset: 10, closeButton: false }).setHTML("<h6>EDAS - Antenne du Parc</h6><p>4 emplacements à proximité</p>"))
+                .addTo(map);            
+            var marker1 = document.createElement('div');
+            marker1.className = 'marker';
+            marker1.style.backgroundColor = "green"
+            
+            new maplibregl.Marker(marker1, {})
+                .setLngLat([2.1947687978007204, 48.8964533725298])
+                .setPopup(new maplibregl.Popup({ offset: 10, closeButton: false }).setHTML("<h6>EDAS - Le Quartz</h6><p>4 emplacements à proximité</p>"))
+                .addTo(map);            
+            var marker432 = document.createElement('div');
+            marker432.className = 'marker';
+            marker432.style.backgroundColor = "red"
+            
+            new maplibregl.Marker(marker432, {})
+                .setLngLat([2.1981794003651776, 48.893499262947046])
+                .setPopup(new maplibregl.Popup({ offset: 10, closeButton: false }).setHTML("<h6>MDPH (Maison Départementale des Personnes Handicapées)</h6><p>Aucun emplacement à proximité</p>"))
+                .addTo(map);            
+            var marker476 = document.createElement('div');
+            marker476.className = 'marker';
+            marker476.style.backgroundColor = "green"
+            
+            new maplibregl.Marker(marker476, {})
+                .setLngLat([2.2135402014556247, 48.90268023525237])
+                .setPopup(new maplibregl.Popup({ offset: 10, closeButton: false }).setHTML("<h6>Maison de l'Etudiant</h6><p>90 emplacements à proximité</p>"))
+                .addTo(map);            
+            var marker894 = document.createElement('div');
+            marker894.className = 'marker';
+            marker894.style.backgroundColor = "green"
+            
+            new maplibregl.Marker(marker894, {})
+                .setLngLat([2.2222305127354534, 48.897136649396934])
+                .setPopup(new maplibregl.Popup({ offset: 10, closeButton: false }).setHTML("<h6>Maison des femmes</h6><p>74 emplacements à proximité</p>"))
+                .addTo(map);            
+            var marker867 = document.createElement('div');
+            marker867.className = 'marker';
+            marker867.style.backgroundColor = "green"
+            
+            new maplibregl.Marker(marker867, {})
+                .setLngLat([2.2253757012027715, 48.88898199443014])
+                .setPopup(new maplibregl.Popup({ offset: 10, closeButton: false }).setHTML("<h6>Maison des habitants</h6><p>68 emplacements à proximité</p>"))
+                .addTo(map);            
+            var marker19 = document.createElement('div');
+            marker19.className = 'marker';
+            marker19.style.backgroundColor = "green"
+            
+            new maplibregl.Marker(marker19, {})
+                .setLngLat([2.2162670630263213, 48.90860438521745])
+                .setPopup(new maplibregl.Popup({ offset: 10, closeButton: false }).setHTML("<h6>Sécurité Sociale du Petit Nanterre</h6><p>6 emplacements à proximité</p>"))
+                .addTo(map);            
+            var marker21 = document.createElement('div');
+            marker21.className = 'marker';
+            marker21.style.backgroundColor = "red"
+            
+            new maplibregl.Marker(marker21, {})
+                .setLngLat([2.2231092984063685, 48.90041220227171])
+                .setPopup(new maplibregl.Popup({ offset: 10, closeButton: false }).setHTML("<h6>URSSAF Paris RP</h6><p>Aucun emplacement à proximité</p>"))
+                .addTo(map);
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>
