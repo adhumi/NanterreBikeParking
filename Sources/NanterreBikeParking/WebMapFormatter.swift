@@ -66,7 +66,8 @@ struct WebMapFormatter {
                     </table>
 
                     <footer class="small">
-                        Par Adrien Humilière pour <a href="https://www.larustinedenanterre.fr">La Rustine de Nanterre</a>
+                        Par Adrien Humilière pour <a href="https://www.larustinedenanterre.fr">La Rustine de Nanterre</a><br />
+                        Voir sur <a href="https://github.com/adhumi/NanterreBikeParking">GitHub</a>
                     </footer>
                 </div>
             </div>
