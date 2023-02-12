@@ -190,7 +190,7 @@ Objectif : référencer les équipements qui manquent de stationnement vélos (�
 | Crèche collective Chat Perché | ✅ | 14 places |
 | Crèche collective Courte Echelle | ✅ | 14 places |
 | Crèche collective Grand Champ | ❌ | 0 places |
-| Crèche collective Ile aux trésors | ✅ | 8 places |
+| Crèche collective Ile aux trésors | ✅ | 14 places |
 | Crèche collective La Farandole | ✅ | 6 places |
 | Crèche collective Parc | ✅ | 8 places |
 | Crèche collective Petit Navire | ✅ | 4 places |
@@ -199,7 +199,7 @@ Objectif : référencer les équipements qui manquent de stationnement vélos (�
 | Crèche collective Pinocchio | ✅ | 4 places |
 | Crèche collective Pongerville | ❌ | 0 places |
 | Crèche collective Souris Verte | ✅ | 86 places |
-| Crèche collective Voltaire | ✅ | 8 places |
+| Crèche collective Voltaire | ✅ | 10 places |
 | Crèche collective Babilou | ❌ | 0 places |
 | Crèche collective Les Petits Chaperons Rouges - LPCR de la Boule | ❌ | 0 places |
 | Crèche collective Les Petits Chaperons Rouges - LPCR des Groues | ❌ | 0 places |
@@ -213,11 +213,11 @@ Objectif : référencer les équipements qui manquent de stationnement vélos (�
 | Crèche familiale Amitié Rosiers - Antenne du Parc | ✅ | 24 places |
 | Crèche familiale Amitié Rosiers - Antenne du Petit Nanterre | ✅ | 4 places |
 | Crèche familiale Castel Marly | ✅ | 43 places |
-| Halte accueil Les Robinsons | ✅ | 8 places |
+| Halte accueil Les Robinsons | ✅ | 14 places |
 | Halte accueil Parc | ✅ | 8 places |
 | Halte accueil Pinocchio | ✅ | 4 places |
 | Halte accueil Kidibouts | ✅ | 20 places |
-| R.P.A.M. Les Gentianes (Chemin de l'Ile) | ✅ | 8 places |
+| R.P.A.M. Les Gentianes (Chemin de l'Ile) | ✅ | 14 places |
 | R.P.A.M. de l'Arlequin | ✅ | 40 places |
 | R.P.A.M. du Centre | ✅ | 47 places |
 | Centre Gratuit d'Information de Dépistage et de Diagnostic (CeGIDD) | ✅ | 8 places |
@@ -279,7 +279,7 @@ Objectif : référencer les équipements qui manquent de stationnement vélos (�
 | Hôtel de Ville - Tour A | ✅ | 16 places |
 | Hôtel du Département Arena | ✅ | 8 places |
 | Hôtel du département (Annexe) | ❌ | 0 places |
-| Mairie de quartier du Chemin de l'Ile | ✅ | 8 places |
+| Mairie de quartier du Chemin de l'Ile | ✅ | 14 places |
 | Mairie de quartier du Parc | ✅ | 34 places |
 | Mairie de quartier du Petit Nanterre | ✅ | 4 places |
 | Mairie de quartier du Plateau - Mont-Valérien | ✅ | 4 places |
@@ -321,7 +321,7 @@ Objectif : référencer les équipements qui manquent de stationnement vélos (�
 | Salle de quartier des Provinces Françaises | ✅ | 68 places |
 | Salle de quartier des Tulipes | ✅ | 44 places |
 | Salle de quartier du Plateau | ✅ | 20 places |
-| Salle des Guignons | ✅ | 8 places |
+| Salle des Guignons | ✅ | 14 places |
 | Salle des Iris | ✅ | 38 places |
 | Salle du Plateau | ❌ | 0 places |
 | Salle polyvalente de l'espace Hoche | ❌ | 0 places |
@@ -355,7 +355,7 @@ Objectif : référencer les équipements qui manquent de stationnement vélos (�
 | CRS Autoroutière Ouest Ile de France | ❌ | 0 places |
 | Commissariat de Police | ✅ | 2 places |
 | Poste Alouettes | ✅ | 34 places |
-| Poste Chemin de l'Ile | ✅ | 12 places |
+| Poste Chemin de l'Ile | ✅ | 20 places |
 | Poste Muguets | ✅ | 14 places |
 | Poste Pablo Picasso | ✅ | 46 places |
 | Poste Principale | ✅ | 4 places |
