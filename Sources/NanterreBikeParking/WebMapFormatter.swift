@@ -54,7 +54,7 @@ struct WebMapFormatter {
 
                     <div class="alert alert-primary d-flex align-items-center" role="alert" style="margin-top: 2em; margin-bottom: 2em;">
                         <blockquote class="blockquote" style="margin: 0;">
-                            <p>D'après les données disponibles sur OpenStreetMap pour la ville de Nanterre, \(String(format: "%.f", ratioWithoutParking * 100)) % des équipements ne proposent pas de stationnement vélo à moins de 100 mètres.</p>
+                            <p>D'après les données disponibles sur OpenStreetMap pour la ville de Nanterre, <strong>\(String(format: "%.f", ratioWithoutParking * 100)) %</strong> des équipements ne proposent pas de stationnement vélo à moins de 100 mètres.</p>
                         </blockquote>
                     </div>
                     
