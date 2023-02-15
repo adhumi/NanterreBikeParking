@@ -2,8 +2,14 @@
 
 Objectif : référencer les équipements qui manquent de stationnement vélos (à moins de 100 mètres) sur la ville de Nanterre.
 
-- La liste des équipements vient des données fournies par la ville https://www.nanterre.fr/1522-les-equipements.htm
+- La liste des équipements vient des [données fournies par la ville](https://www.nanterre.fr/1522-les-equipements.htm) 
 - Les stationnements vélo correspondants viennent d'OpenStreetMap, via [Overpass Turbo](https://overpass-turbo.eu)
+
+## Comment ça marche ?
+
+Pour mettre à jour la liste des équipements (`README` et `index.html`)
+1. Télécharger la liste des équipements au format CSV [sur le site de la ville de Nanterre](https://www.nanterre.fr/1522-les-equipements.htm)
+2. Lancer `swift run NanterreBikeParking CHEMIN_VERS_LE_CSV`
 
 ## Résultat
 
