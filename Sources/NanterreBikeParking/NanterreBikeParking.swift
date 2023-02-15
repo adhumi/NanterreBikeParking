@@ -18,11 +18,17 @@ struct NanterreBikeParking: AsyncParsableCommand {
         var bar = ProgressBar(count: equipmentService.equipments.count, configuration: [ProgressIndex(), ProgressBarLine(barLength: 60)])
         bar.next()
         
+        var countWithoutBikeParking: Int = 0
+        
         for equipment in equipmentService.equipments {
             guard let request = RequestBuilder(equipment: equipment, radius: 100).request else { continue }
             
             let (data, _) = try await URLSession.shared.data(for: request)
             let overpassResponse = try decoder.decode(OverpassResponse.self, from: data)
+            
+            if overpassResponse.elements.count == 0 {
+                countWithoutBikeParking += 1
+            }
 
             let newEquipment = Equipment(identifier: equipment.identifier,
                                          type: equipment.type,
@@ -44,8 +50,9 @@ struct NanterreBikeParking: AsyncParsableCommand {
         let markdownTable = markdownFormatter.string(from: equipementsWithCartographicData)
         try markdownFormatter.apply(table: markdownTable, to: "README.md")
         
+        let ratioWithoutParking = Double(countWithoutBikeParking) / Double(equipementsWithCartographicData.count)
         let webMapFormatter = WebMapFormatter()
-        let html = webMapFormatter.htmlView(with: equipementsWithCartographicData)
+        let html = webMapFormatter.htmlView(with: equipementsWithCartographicData, ratioWithoutParking: ratioWithoutParking)
         try webMapFormatter.writeToIndex(html: html)
     }
 }

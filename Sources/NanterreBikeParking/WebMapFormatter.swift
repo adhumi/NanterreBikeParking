@@ -1,7 +1,7 @@
 import Foundation
 
 struct WebMapFormatter {
-    func htmlView(with equipments: [Equipment]) -> String {
+    func htmlView(with equipments: [Equipment], ratioWithoutParking: Double) -> String {
         var html = """
 <html>
     <head>
@@ -51,6 +51,12 @@ struct WebMapFormatter {
             <div class="row">
                 <div class="col">
                     <h2>Nombre d'emplacements vélos par équipement</h2>
+
+                    <div class="alert alert-primary d-flex align-items-center" role="alert" style="margin-top: 2em; margin-bottom: 2em;">
+                        <blockquote class="blockquote" style="margin: 0;">
+                            <p>D'après les données disponibles sur OpenStreetMap pour la ville de Nanterre, \(String(format: "%.f", ratioWithoutParking * 100)) % des équipements ne proposent pas de stationnement vélo à moins de 100 mètres.</p>
+                        </blockquote>
+                    </div>
                     
                     <p>Cette page utilise <a href="https://www.nanterre.fr/1522-les-equipements.htm">les données rendues disponibles par la Ville de Nanterre</a> pour la liste des équipements et <a href="https://www.openstreetmap.org">OpenStreetMap</a> pour la position des emplacements de stationnement vélo. Elle affiche pour chaque équipement le nombre d'emplacements de stationnement vélo disponibles à moins de 100 mètres.</p>
                     
