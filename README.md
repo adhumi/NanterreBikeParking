@@ -37,13 +37,13 @@ Pour mettre à jour la liste des équipements (`README` et `index.html`)
 | Auditorium - Parc des Anciennes Mairies | ✅ | 6 places |
 | Espace Pierre Reverdy | ✅ | 36 places |
 | La Terrasse - Espace d'art de Nanterre | ✅ | 69 places |
-| L’Agora - fabrique des futurs | ❌ | 0 places |
+| L’Agora - fabrique des futurs | ✅ | 6 places |
 | Maison de la Musique - Conservatoire à Rayonnement Départemental (musique, danse et Théâtre) | ✅ | 16 places |
 | Médiathèque Flora Tristan | ✅ | 51 places |
 | Médiathèque Pierre et Marie Curie | ✅ | 24 places |
 | Médiathèque des Fontenelles | ✅ | 10 places |
 | Médiathèque du Petit Nanterre | ✅ | 4 places |
-| Point lecture du Chemin de l’Ile | ❌ | 0 places |
+| Point lecture du Chemin de l’Ile | ✅ | 20 places |
 | Cinéma Les Lumières | ✅ | 12 places |
 | Espace Chevreul | ❌ | 0 places |
 | La Forge | ✅ | 10 places |
@@ -182,7 +182,7 @@ Pour mettre à jour la liste des équipements (`README` et `index.html`)
 | Centre de loisirs élémentaire des Gavroches | ❌ | 0 places |
 | Centre de loisirs élémentaire des Hauts Gibets | ❌ | 0 places |
 | Maison de l'enfance | ✅ | 16 places |
-| Club Amitié et Loisirs des Séniors (salle d'activités du square) | ❌ | 0 places |
+| Club Amitié et Loisirs des Séniors (salle d'activités du square) | ✅ | 6 places |
 | Salle d'activité des Muguets | ✅ | 4 places |
 | Espace Arts Plastiques Thomas Lemaître | ❌ | 0 places |
 | Espace Jeunesse Picasso | ✅ | 48 places |
@@ -196,7 +196,7 @@ Pour mettre à jour la liste des équipements (`README` et `index.html`)
 | Crèche collective Chat Perché | ✅ | 14 places |
 | Crèche collective Courte Echelle | ✅ | 14 places |
 | Crèche collective Grand Champ | ❌ | 0 places |
-| Crèche collective Ile aux trésors | ✅ | 14 places |
+| Crèche collective Ile aux trésors | ✅ | 18 places |
 | Crèche collective La Farandole | ✅ | 6 places |
 | Crèche collective Parc | ✅ | 8 places |
 | Crèche collective Petit Navire | ✅ | 4 places |
@@ -219,11 +219,11 @@ Pour mettre à jour la liste des équipements (`README` et `index.html`)
 | Crèche familiale Amitié Rosiers - Antenne du Parc | ✅ | 24 places |
 | Crèche familiale Amitié Rosiers - Antenne du Petit Nanterre | ✅ | 4 places |
 | Crèche familiale Castel Marly | ✅ | 43 places |
-| Halte accueil Les Robinsons | ✅ | 14 places |
+| Halte accueil Les Robinsons | ✅ | 18 places |
 | Halte accueil Parc | ✅ | 8 places |
 | Halte accueil Pinocchio | ✅ | 4 places |
 | Halte accueil Kidibouts | ✅ | 20 places |
-| R.P.A.M. Les Gentianes (Chemin de l'Ile) | ✅ | 14 places |
+| R.P.A.M. Les Gentianes (Chemin de l'Ile) | ✅ | 18 places |
 | R.P.A.M. de l'Arlequin | ✅ | 40 places |
 | R.P.A.M. du Centre | ✅ | 47 places |
 | Centre Gratuit d'Information de Dépistage et de Diagnostic (CeGIDD) | ✅ | 8 places |
@@ -242,7 +242,7 @@ Pour mettre à jour la liste des équipements (`README` et `index.html`)
 | Unité de jour Adolescents | ❌ | 0 places |
 | Unité de jour Le Parc | ✅ | 6 places |
 | PMI Départementale Anatole France | ✅ | 22 places |
-| PMI Départementale Benoît Frachon | ✅ | 4 places |
+| PMI Départementale Benoît Frachon | ✅ | 8 places |
 | PMI Départementale Champ aux Melles | ✅ | 8 places |
 | PMI Départementale Jacques Decour | ❌ | 0 places |
 | PMI Municipale Maurice Thorez | ✅ | 8 places |
@@ -275,7 +275,7 @@ Pour mettre à jour la liste des équipements (`README` et `index.html`)
 | Piscine Paul Vaillant Couturier | ❌ | 0 places |
 | Piscine Université Paris Nanterre | ✅ | 40 places |
 | Piscine du Palais des Sports | ✅ | 10 places |
-| Skatepark Hoche | ❌ | 0 places |
+| Skatepark Hoche | ✅ | 20 places |
 | Skatepark Paul Vaillant Couturier | ❌ | 0 places |
 | Stade Gabriel Péri | ❌ | 0 places |
 | Stade Jean Guimier | ❌ | 0 places |
@@ -285,7 +285,7 @@ Pour mettre à jour la liste des équipements (`README` et `index.html`)
 | Hôtel de Ville - Tour A | ✅ | 16 places |
 | Hôtel du Département Arena | ✅ | 8 places |
 | Hôtel du département (Annexe) | ❌ | 0 places |
-| Mairie de quartier du Chemin de l'Ile | ✅ | 14 places |
+| Mairie de quartier du Chemin de l'Ile | ✅ | 18 places |
 | Mairie de quartier du Parc | ✅ | 34 places |
 | Mairie de quartier du Petit Nanterre | ✅ | 4 places |
 | Mairie de quartier du Plateau - Mont-Valérien | ✅ | 4 places |
@@ -327,10 +327,10 @@ Pour mettre à jour la liste des équipements (`README` et `index.html`)
 | Salle de quartier des Provinces Françaises | ✅ | 68 places |
 | Salle de quartier des Tulipes | ✅ | 44 places |
 | Salle de quartier du Plateau | ✅ | 20 places |
-| Salle des Guignons | ✅ | 14 places |
+| Salle des Guignons | ✅ | 18 places |
 | Salle des Iris | ✅ | 38 places |
 | Salle du Plateau | ❌ | 0 places |
-| Salle polyvalente de l'espace Hoche | ❌ | 0 places |
+| Salle polyvalente de l'espace Hoche | ✅ | 20 places |
 | Salles de quartier Jacques Decour | ❌ | 0 places |
 | Salles de quartier Maxime Gorki | ✅ | 10 places |
 | Salles du foyer du Champs aux Melles | ❌ | 0 places |
@@ -342,7 +342,7 @@ Pour mettre à jour la liste des équipements (`README` et `index.html`)
 | Gendarmerie Nationale | ❌ | 0 places |
 | Marché Charles de Gaulle | ✅ | 30 places |
 | Marché Pablo Picasso | ✅ | 18 places |
-| Marché de la Gare | ❌ | 0 places |
+| Marché de la Gare | ✅ | 4 places |
 | Marché du Centre | ✅ | 20 places |
 | Parking Becquet | ❌ | 0 places |
 | Parking Hôtel de Ville | ❌ | 0 places |
@@ -381,7 +381,7 @@ Pour mettre à jour la liste des équipements (`README` et `index.html`)
 | Office de Tourisme | ✅ | 36 places |
 | WC Publics - Parc des Anciennes Mairies | ❌ | 0 places |
 | WC Publics - Place de la Boule | ✅ | 16 places |
-| Centre Social et Culturel Les Acacias - Espace Hoche | ❌ | 0 places |
+| Centre Social et Culturel Les Acacias - Espace Hoche | ✅ | 20 places |
 | Centre social et culturel Hissez-Haut | ❌ | 0 places |
 | Centre social et culturel La Traverse | ✅ | 48 places |
 | Centre social et culturel Les Acacias - Espace Sorbiers | ❌ | 0 places |
@@ -393,7 +393,7 @@ Pour mettre à jour la liste des équipements (`README` et `index.html`)
 | Résidence du Parc - Association Nouveau Foyer des Cités Jardins | ❌ | 0 places |
 | Résidence municipale des Muguets | ✅ | 4 places |
 | Résidence municipale du Champs aux Melles | ✅ | 6 places |
-| Résidence municipale du Square | ❌ | 0 places |
+| Résidence municipale du Square | ✅ | 6 places |
 | Foyer Restaurant des Muguets | ✅ | 4 places |
 | Foyer Restaurant du Champs aux Melles | ✅ | 6 places |
 | Foyer Restaurant du Square | ❌ | 0 places |
@@ -419,7 +419,7 @@ Pour mettre à jour la liste des équipements (`README` et `index.html`)
 | Centre Local d'Information et de Coordination gérontologique - C.L.I.C. | ✅ | 24 places |
 | Centre d'information - Maison Daniel Féry | ✅ | 14 places |
 | EDAS - Antenne du Parc | ✅ | 4 places |
-| EDAS - Le Quartz | ✅ | 4 places |
+| EDAS - Le Quartz | ✅ | 8 places |
 | MDPH (Maison Départementale des Personnes Handicapées) | ❌ | 0 places |
 | Maison de l'Etudiant | ✅ | 90 places |
 | Maison des femmes | ✅ | 74 places |
